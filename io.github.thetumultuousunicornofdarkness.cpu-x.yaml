@@ -64,5 +64,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
-        tag: "v5.0.3"
-        commit: 470ef8daa6186045fb23238cb8043f718f6cfb44
+        #tag: "v5.0.3"
+        commit: 19b6f03631c006489c588c82ff8400aeacae6225
