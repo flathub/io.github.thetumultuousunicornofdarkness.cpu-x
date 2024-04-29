@@ -27,8 +27,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/anrieff/libcpuid.git
-        tag: "v0.6.4"
-        commit: 02237e67f5cbff348c63ad5338a70d75909a23b1
+        tag: "v0.6.5"
+        commit: a578c8d993bb27ecf413ac8ff6b93845fc2fe1b3
     cleanup:
       - /bin
       - /include
