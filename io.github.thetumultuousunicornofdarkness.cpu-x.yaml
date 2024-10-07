@@ -1,6 +1,6 @@
 app-id: io.github.thetumultuousunicornofdarkness.cpu-x
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: cpu-x
 
@@ -22,13 +22,15 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DENABLE_DOCS=0
       - -DBUILD_SHARED_LIBS=0
+      - -DLIBCPUID_ENABLE_DOCS=0
+      - -DLIBCPUID_ENABLE_TESTS=0
+      - -DLIBCPUID_BUILD_DRIVERS=0
     sources:
       - type: git
         url: https://github.com/anrieff/libcpuid.git
-        tag: "v0.6.5"
-        commit: a578c8d993bb27ecf413ac8ff6b93845fc2fe1b3
+        tag: "v0.7.0"
+        commit: 9574313a76980eecb9ce85221efa244deca71501
     cleanup:
       - /bin
       - /include
@@ -41,15 +43,14 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DBUILD_SHARED_LIBS=0
-      - -DGLFW_BUILD_TESTS=0
       - -DGLFW_BUILD_DOCS=0
-      - -DGLFW_USE_WAYLAND=1
+      - -DGLFW_BUILD_TESTS=0
+      - -DGLFW_BUILD_WAYLAND=1
     sources:
       - type: git
         url: https://github.com/glfw/glfw.git
-        commit: 3fa2360720eeba1964df3c0ecf4b5df8648a8e52
-      - type: patch
-        path: patches/0001-Platform-Prefer-Wayland-over-X11.patch
+        tag: "3.4"
+        commit: 7b6aead9fb88b3623e3b3725ebb42670cbe4c579
     cleanup:
       - /include
       - '*.a'
@@ -64,5 +65,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
-        tag: "v5.0.4"
-        commit: 0f37997310cf58b094ca0551268d216acfc8a1b2
+        tag: "v5.1.0"
+        commit: 7382c821c4ff303b3de852678068666126895604
