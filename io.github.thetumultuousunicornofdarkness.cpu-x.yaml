@@ -62,9 +62,10 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DFLATPAK=1
-      - -DPOLKIT_ACTION_DIR=/usr/share/polkit-1/actions
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
         tag: "v5.1.1"
         commit: 6b88d788a8469bbd53ac0799166134d558d0bf3c
+      - type: patch
+        path: patches/0001-fix-cmake.patch
