@@ -29,8 +29,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/anrieff/libcpuid.git
-        tag: "v0.7.0"
-        commit: 9574313a76980eecb9ce85221efa244deca71501
+        tag: "v0.7.1"
+        commit: 018a05372d1cf2b4b9c18192da6f203521a23460
     cleanup:
       - /bin
       - /include
@@ -65,5 +65,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
-        tag: "v5.1.0"
-        commit: 7382c821c4ff303b3de852678068666126895604
+        tag: "v5.1.1"
+        commit: 6b88d788a8469bbd53ac0799166134d558d0bf3c
+      - type: patch
+        path: patches/0001-fix-cmake.patch
