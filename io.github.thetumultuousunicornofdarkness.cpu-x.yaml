@@ -62,6 +62,7 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DFLATPAK=1
+      - -DPOLKIT_ACTION_DIR=/usr/share/polkit-1/actions
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
