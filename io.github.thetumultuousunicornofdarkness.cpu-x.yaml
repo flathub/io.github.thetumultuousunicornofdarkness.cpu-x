@@ -65,7 +65,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
-        tag: "v5.1.1"
-        commit: 6b88d788a8469bbd53ac0799166134d558d0bf3c
-      - type: patch
-        path: patches/0001-fix-cmake.patch
+        tag: "v5.1.2"
+        commit: fe9bf675f12f52543d8fda9264f6041859f91695
