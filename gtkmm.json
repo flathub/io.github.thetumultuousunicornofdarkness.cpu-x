@@ -66,9 +66,9 @@
             "name": "glibmm",
             "sources": [
                 {
-                    "sha256": "fe02c1e5f5825940d82b56b6ec31a12c06c05c1583cfe62f934d0763e1e542b3",
+                    "sha256": "64f11d3b95a24e2a8d4166ecff518730f79ecc27222ef41faf7c7e0340fc9329",
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz",
+                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.8.tar.xz",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "glibmm",
@@ -155,6 +155,7 @@
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "atkmm",
+                        "version-scheme": "odd-minor-is-unstable",
                         "versions": {
                             "<": "2.35"
                         }
