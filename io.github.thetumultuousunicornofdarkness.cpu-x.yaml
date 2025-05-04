@@ -38,25 +38,6 @@ modules:
       - /lib/cmake
       - /lib/pkgconfig
 
-  - name: glfw
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DBUILD_SHARED_LIBS=0
-      - -DGLFW_BUILD_DOCS=0
-      - -DGLFW_BUILD_TESTS=0
-      - -DGLFW_BUILD_WAYLAND=1
-    sources:
-      - type: git
-        url: https://github.com/glfw/glfw.git
-        tag: "3.4"
-        commit: 7b6aead9fb88b3623e3b3725ebb42670cbe4c579
-    cleanup:
-      - /include
-      - '*.a'
-      - /lib/cmake
-      - /lib/pkgconfig
-
   - name: cpu-x
     buildsystem: cmake-ninja
     config-opts:
