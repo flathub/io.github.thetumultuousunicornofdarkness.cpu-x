@@ -18,6 +18,22 @@ finish-args:
 modules:
   - gtkmm.json
 
+  - name: OpenCL
+    buildsystem: simple
+    build-commands:
+      - cp -av CL $FLATPAK_DEST/include/
+    sources:
+      - type: archive
+        url: https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.10.24.tar.gz
+        sha256: 159f2a550592bae49859fee83d372acd152328fdf95c0dcd8b9409f8fad5db93
+        x-checker-data:
+          type: anitya
+          project-id: 223257
+          stable-only: true
+          url-template: https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v$version.tar.gz
+    cleanup:
+      - /include
+
   - name: libcpuid
     buildsystem: cmake-ninja
     config-opts:
@@ -48,3 +64,5 @@ modules:
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
         tag: "v5.2.0"
         commit: cb8593264bbdc2b3896f2829843be6815f77e390
+      - type: patch
+        path: patches/0001-CMake-Improve-detection-of-NCurses-OpenGL-OpenCL-Vul.patch
