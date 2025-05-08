@@ -45,8 +45,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/anrieff/libcpuid.git
-        tag: "v0.7.1"
-        commit: 018a05372d1cf2b4b9c18192da6f203521a23460
+        tag: "v0.8.0"
+        commit: 5bb7c32618fb50178462c791f649516ae6a17193
     cleanup:
       - /bin
       - /include
@@ -62,7 +62,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
-        tag: "v5.2.0"
-        commit: cb8593264bbdc2b3896f2829843be6815f77e390
-      - type: patch
-        path: patches/0001-CMake-Improve-detection-of-NCurses-OpenGL-OpenCL-Vul.patch
+        tag: "v5.3.0"
+        commit: 0b59ac2dc7db5a489612bfec8a36397716959dda
