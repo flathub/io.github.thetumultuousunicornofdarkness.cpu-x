@@ -24,8 +24,8 @@ modules:
       - cp -av CL $FLATPAK_DEST/include/
     sources:
       - type: archive
-        url: https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.10.24.tar.gz
-        sha256: 159f2a550592bae49859fee83d372acd152328fdf95c0dcd8b9409f8fad5db93
+        url: https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2025.06.13.tar.gz
+        sha256: 8bf2fda271c3511ee1cd9780b97446e9fa0cf2b0765cdd54aee60074a4567644
         x-checker-data:
           type: anitya
           project-id: 223257
@@ -45,7 +45,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/anrieff/libcpuid.git
-        tag: "v0.8.0"
+        tag: v0.8.0
         commit: 5bb7c32618fb50178462c791f649516ae6a17193
     cleanup:
       - /bin
@@ -62,5 +62,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
-        tag: "v5.3.1"
+        tag: v5.3.1
         commit: ce33312f206fece66b3a8123b590da760d15a2e3
