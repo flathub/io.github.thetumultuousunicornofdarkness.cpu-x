@@ -45,8 +45,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/anrieff/libcpuid.git
-        tag: v0.8.0
-        commit: 5bb7c32618fb50178462c791f649516ae6a17193
+        tag: v0.8.1
+        commit: 3c5b94bea740badb8da703e4a30a0ef70d956010
     cleanup:
       - /bin
       - /include
@@ -62,5 +62,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X.git
-        tag: v5.3.1
-        commit: ce33312f206fece66b3a8123b590da760d15a2e3
+        tag: v5.4.0
+        commit: 41f5d1ac3b13e60aa30212f2b9f38de646fd2b07
