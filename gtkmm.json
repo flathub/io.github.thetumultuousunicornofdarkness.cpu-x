@@ -97,9 +97,9 @@
             "name": "cairomm",
             "sources": [
                 {
-                    "sha256": "70136203540c884e89ce1c9edfb6369b9953937f6cd596d97c78c9758a5d48db",
+                    "sha256": "7e0d5c7f29175d573a03ab5c45aef63f48dd91a5caf335a404cd763e4b7cea4a",
                     "type": "archive",
-                    "url": "https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz",
+                    "url": "https://www.cairographics.org/releases/cairomm-1.14.6.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7959,
